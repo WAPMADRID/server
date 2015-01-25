@@ -26,7 +26,7 @@ var GroupSchema = new Schema({
             ref: 'Walker'
         },
         accepted: {
-            type: boolean
+            type: Boolean
         }
     }],
     schedule: {

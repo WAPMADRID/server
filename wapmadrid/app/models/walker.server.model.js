@@ -4,7 +4,8 @@
  * Module dependencies.
  */
 var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
+    Schema = mongoose.Schema,
+    crypto = require('crypto');
 
 var validateLocalStrategyProperty = function(property) {
     return ((this.provider !== 'local' && !this.updated) || property.length);
